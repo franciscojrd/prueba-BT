@@ -1,0 +1,82 @@
+ pseudocidigo
+
+ Clase Cliente:
+    Atributos:
+        idCliente: entero
+        nombre: cadena
+        telefono: cadena
+        direccion: cadena
+        correo: cadena
+        fechaNacimiento: fecha
+        ciudad: Ciudad
+    
+    Métodos:
+        registrarCliente(): // Este método registra un nuevo cliente en la base de datos
+        solicitarVehiculo(): // Este método para solicitá un vehículo disponibles
+            
+
+Clase Vehiculo:
+    Atributos:
+        idVehiculo: entero
+        marca: cadena
+        modelo: cadena
+        año: entero
+        tamaño: tamaño
+        clase: clase
+        trasmision: trasmision
+        tieneAire: boolean
+        localidad: Localidad
+        precio: float
+    
+Clase Reserva:
+    Atributos:
+        idReserva: entero
+        cliente: Cliente
+        vehiculo: Vehículo
+        fechaInicio: fecha
+        fechaFin: fecha 
+        fechaCancelacion: fecha
+        metodoPago: metodoPago
+        estado: estado
+        observaciones: cadena
+        
+    
+    Métodos:
+        registrarReserva(): // Este método registra una reserva
+        cancelarReserva(): // Este método cancela una reserva
+        finalizarReserva(): // Este método finaliza una reserva
+
+Clase Ciudad:
+    Atributos:
+        idCiudad: entero
+        nombre: cadena
+        codigoPostal: cadena
+
+Enumerador trasmision:
+  Mecanica
+  Automatica
+
+Enumerador tamaño:
+  Pequeño
+  Mediano
+  Grande
+  Vans
+  Camioneta
+
+Enumerador metodoPago:
+  tarjetaDebido
+  tarjetaCredito 
+  EnDestino
+
+Enumerador clase:
+  Basico
+  Lujo
+  Deportivo
+
+Enumerador estado:
+  Activo
+  Cancelado 
+  Finalizado
+
+
+
